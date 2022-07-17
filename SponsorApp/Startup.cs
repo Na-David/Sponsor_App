@@ -22,6 +22,9 @@ namespace SponsorApp
             {
                 app.UseDeveloperExceptionPage();
             }
+            //Middle Ware code 
+            app.UseDefaultFiles(); // index.html, default.html is BASIC DOC -> if there are those files, then index.html will run(which is static file)
+            app.UseStaticFiles(); // HTML, CSS, JavaScript, ...
 
             app.UseRouting();
 
